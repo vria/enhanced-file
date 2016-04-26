@@ -18,7 +18,6 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.2",
-		"vria/nodiacritic": "~0.1",
         "symfony/framework-bundle": ">=2.3"
     },
     "require-dev": {
