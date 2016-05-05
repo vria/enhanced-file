@@ -19,7 +19,7 @@ class VRiaEnhancedFileExtension extends ConfigurableExtension
         $formThemes = $container->getParameter('twig.form.resources');
         $formThemes[] = 'VRiaEnhancedFileBundle:Form:' . $mergedConfig['theme'] . '_layout.html.twig';
         $container->setParameter('twig.form.resources', $formThemes);
-
+        
         $fileTypeDefinition = new Definition('VRia\Bundle\EnhancedFileBundle\Form\EnhancedFileType');
         $fileTypeDefinition->addTag('form.type', array('alias' => 'enhanced_file'));
         $container->setDefinition('vria.form.type.enhanced_file', $fileTypeDefinition);
