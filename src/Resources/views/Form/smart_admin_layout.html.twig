@@ -1,0 +1,51 @@
+{% use "form_div_layout.html.twig" %}
+
+
+{# START #}
+{%- block form_start -%}
+    {% set attr = attr|merge({class: (attr.class|default('') ~ ' smart-form')|trim}) %}
+    {{- parent() -}}
+{%- endblock form_start -%}
+
+
+{# ROW #}
+{%- block form_row -%}
+    <section>
+        {{- form_label(form) -}}
+        {{- form_widget(form) -}}
+        {{- form_errors(form) -}}
+    </section>
+{%- endblock form_row -%}
+
+
+{# LABEL #}
+{%- block form_label -%}
+    {% set label_attr = label_attr|merge({class: (label_attr.class|default('') ~ ' label')|trim}) %}
+    {{- parent() -}}
+{%- endblock form_label -%}
+
+
+{# ERRORS #}
+{%- block form_errors -%}
+    <em class="invalid">
+        {%- for error in errors -%}
+            <div>{{ error.message }}</div>
+        {%- endfor -%}
+    </em>
+{%- endblock form_errors -%}
+
+
+{# FILE #}
+{% block file_widget -%}
+    {% set attr = attr|merge({'onchange': 'this.parentNode.nextElementSibling.value = this.value'}) -%}
+    <div class="input input-file{% if not valid %} state-error{% endif %}"{% if download_url|default %} style="margin-right: 42px;"{% endif %}>
+        <span class="button">
+            {{- block('form_widget_simple') -}}
+            {{ 'browse'|trans -}}
+        </span>
+        <input type="text" placeholder="{{ 'no_file_chosen'|trans }}" readonly="">
+        {%- if download_url|default -%}
+            <a style="position: absolute; top: 0; right: -42px; font-size: 38px;" class="fa fa-download" href="{{ download_url }}"></a>
+        {%- endif -%}
+    </div>
+{%- endblock file_widget %}
