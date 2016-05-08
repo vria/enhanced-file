@@ -9,6 +9,11 @@ use Symfony\Component\HttpKernel\DependencyInjection\ConfigurableExtension;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader;
 
+/**
+ * Class VRiaEnhancedFileExtension
+ * @package VRia\Bundle\EnhancedFileBundle\DependencyInjection
+ * @author Vladyslav Riabchenko <contact@vria.eu>
+ */
 class VRiaEnhancedFileExtension extends ConfigurableExtension
 {
     /**
