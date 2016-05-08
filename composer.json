@@ -8,7 +8,7 @@
         {
             "name": "Riabchenko Vlad",
             "email": "contact@vria.eu",
-			"homepage": "http://vria.eu"
+            "homepage": "http://vria.eu"
         }
     ],
     "support": {
@@ -17,9 +17,9 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.5.9",
-        "symfony/framework-bundle": ">=3.0",
-        "symfony/form": ">=3.0",
+        "php": ">=5.3.3",
+        "symfony/framework-bundle": ">=2.3 <3.0",
+        "symfony/form": ">=2.3 <3.0",
         "twig/twig": "~1.23|~2.0"
     },
     "require-dev": {
