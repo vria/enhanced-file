@@ -6,6 +6,11 @@ namespace VRia\Bundle\EnhancedFileBundle\Test\DependencyInjection;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use VRia\Bundle\EnhancedFileBundle\DependencyInjection\VRiaEnhancedFileExtension;
 
+/**
+ * Class VRiaEnhancedFileExtensionTest
+ * @package VRia\Bundle\EnhancedFileBundle\Test\DependencyInjection
+ * @author Vladyslav Riabchenko <contact@vria.eu>
+ */
 class VRiaEnhancedFileExtensionTest extends \PHPUnit_Framework_TestCase
 {
     /**
