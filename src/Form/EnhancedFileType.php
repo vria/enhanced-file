@@ -39,7 +39,7 @@ class EnhancedFileType extends AbstractType
             ->add('file', FileType::class, array(
                 'label' => false
             ))
-            ->addModelTransformer(new StringToEnhancedFileTransformer($options['directory_path']))
+            ->addModelTransformer(new StringToEnhancedFileTransformer())
             ->addEventListener(FormEvents::PRE_SUBMIT, function(FormEvent $event) use ($options) {
                 $data = $event->getData();
 
