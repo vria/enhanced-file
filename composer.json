@@ -13,7 +13,7 @@
     ],
     "support": {
         "email": "contact@vria.eu",
-        "issues": "https://github.com/riabchenkovlad/enhanced-file/issues"
+        "issues": "https://github.com/vria/enhanced-file/issues"
     },
     "minimum-stability": "dev",
     "require": {

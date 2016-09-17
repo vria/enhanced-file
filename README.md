@@ -1,7 +1,7 @@
 VRiaEnhancedFileBundle
 =============
 
-[![Build Status](https://travis-ci.org/riabchenkovlad/enhanced-file.svg?branch=symfony23)](https://travis-ci.org/riabchenkovlad/enhanced-file)
+[![Build Status](https://travis-ci.org/vria/enhanced-file.svg?branch=symfony23)](https://travis-ci.org/vria/enhanced-file)
 
 File type for Symfony forms with additional functionality:
 
