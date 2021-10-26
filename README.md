@@ -8,8 +8,6 @@ File type for Symfony forms with additional functionality:
 - if file has been previously uploaded, the download link is rendered
 - previously uploaded file can be deleted if new one is uploaded
 
-Check out this [blogpost](https://vria.eu/news/2016/4/10/creating-enhanced-file-type-for-symfony-forms) to know the details of implementation.
-
 
 ##Installation
 
